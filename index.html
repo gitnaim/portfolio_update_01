@@ -1,0 +1,1420 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- 로딩 화면 -->
+    <div id="loading-screen">
+      <img src="image/logo.png" alt="로딩 중..." />
+    </div>
+
+    <div class="wrapper">
+      <!-- 사이트 헤더 -->
+      <header class="header" role="banner">
+        <div class="header_inner">
+          <h1 class="site_brand">
+            <a href="#bg_section" class="logo" aria-label="최상단 이동 로고">
+              <img src="image/logo.png" alt="logo" />
+            </a>
+          </h1>
+
+          <!-- 전역 내비게이션 -->
+          <nav class="global_nav" aria-label="주요 메뉴">
+            <button
+              type="button"
+              class="nav_toggle_button"
+              aria-controls="nav_menu"
+              aria-expanded="false"
+            >
+              메뉴
+            </button>
+
+            <ul id="nav_menu" class="nav_menu">
+              <li class="nav_item">
+                <a href="#intro_section" class="nav_link">INTRO</a>
+              </li>
+              <li class="nav_item">
+                <a href="#skills_section" class="nav_link">SKILLS</a>
+              </li>
+              <li class="nav_item">
+                <a href="#works_section" class="nav_link">PROJECT</a>
+              </li>
+              <li class="nav_item">
+                <a href="#opensource_section" class="nav_link">OPEN SOURCE</a>
+              </li>
+              <li class="nav_item">
+                <a href="#contact_section" class="nav_link">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- dim -->
+          <div class="dim"></div>
+
+          <!-- quick menu -->
+          <div class="quick_menu_wrap">
+            <button
+              type="button"
+              class="quick_btn"
+              aria-expanded="false"
+              aria-controls="quick_menu"
+              aria-label="전체 메뉴 토글"
+            >
+              <img src="icon/ico_menu.svg" alt="전체 메뉴" />
+            </button>
+
+            <nav id="quick_menu_nav" class="quick_menu_nav">
+              <ul id="quick_menu" class="quick_menu nav_menu">
+                <li class="nav_item">
+                  <a href="#bg_section" class="nav_link">HOME</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#intro_section" class="nav_link">INTRO</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#skills_section" class="nav_link">SKILLS</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#works_section" class="nav_link">PROJECT</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#opensource_section" class="nav_link">OPEN SOURCE</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#contact_section" class="nav_link">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- 메인 콘텐츠 -->
+      <main id="main_content" class="site_main" role="main">
+        <!-- 첫 배경 페이지 -->
+        <section
+          id="bg_section"
+          class="bg_section"
+          aria-labelledby="bg_heading"
+        >
+          <div class="bg">
+            <div class="bg_img">
+              <img src="image/main_bg.png" alt="배경 이미지" />
+            </div>
+            <div class="bg_portfolio">
+              <img src="image/main_portfolio.png" alt="포트폴리오" />
+            </div>
+            <div class="bg_name">
+              <img src="image/main_name.png" alt="나임" />
+            </div>
+          </div>
+        </section>
+
+        <!-- 소개 -->
+        <section
+          id="intro_section"
+          class="intro_section"
+          aria-labelledby="intro_heading"
+        >
+          <div class="title_wrapper">
+            <h2 id="intro_heading" class="section_title">INTRO</h2>
+          </div>
+
+          <div class="section_inner">
+            <ul>
+              <li class="text_pocket_wrapper pocket_wrapper_01">
+                <div class="intro_ico"></div>
+                <div class="text_pocket">
+                  <p class="text">
+                    본인이 생각하는 작업자의 태도와 가치관에 대해 말 해주세요.
+                  </p>
+                </div>
+              </li>
+              <li class="text_pocket_wrapper pocket_wrapper_02">
+                <div class="text_pocket">
+                  <ul class="text_pocket--first">
+                    <li><span class="text">성실함</span></li>
+                    <li><span class="text">책임감</span></li>
+                    <li><span class="text">탐구력</span></li>
+                    <li><span class="text">분석력</span></li>
+                    <li><span class="text">튼튼한 구조</span></li>
+                    <li><span class="text">접근성</span></li>
+                    <li><span class="text">효율적인 코드</span></li>
+                  </ul>
+                  <ul class="text_pocket--first">
+                    <li><span class="text">소통</span></li>
+                    <li><span class="text">협력</span></li>
+                    <li><span class="text">변화에 대응하는 자세</span></li>
+                    <li><span class="text">원활한 흐름</span></li>
+                    <li><span class="text">안정적인 결과물</span></li>
+                    <li><span class="text">성취감</span></li>
+                  </ul>
+                  <ul class="text_pocket--second">
+                    <li><span class="text">성실함</span></li>
+                    <li><span class="text">책임감</span></li>
+                    <li><span class="text">탐구력</span></li>
+                    <li><span class="text">분석력</span></li>
+                    <li><span class="text">튼튼한 구조</span></li>
+                    <li><span class="text">접근성</span></li>
+                    <li><span class="text">효율적인 코드</span></li>
+                    <li><span class="text">소통</span></li>
+                    <li><span class="text">협력</span></li>
+                    <li><span class="text">변화에 대응하는 자세</span></li>
+                    <li><span class="text">원활한 흐름</span></li>
+                    <li><span class="text">안정적인 결과물</span></li>
+                    <li><span class="text">성취감</span></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="text_pocket_wrapper pocket_wrapper_03">
+                <div class="text_pocket">
+                  <p class="text">
+                    기술만큼이나 중요한 것은 '수용성'이라고 생각합니다.
+                  </p>
+                  <br />
+                  <p class="text">
+                    물론 기술도 중요하지만, 지내온 시간 동안 제가 배운 것은
+                    ‘기술보다는 소통과 태도'였습니다.
+                  </p>
+                  <p class="text">
+                    동료와의 원활한 소통과 수용하려는 태도에서, 결국 좋은
+                    결과물이 나온다는 믿음을 가지고 있습니다.
+                  </p>
+                  <br />
+                  <p class="text">
+                    변화를 유연하게 받아들이고, 동료와 담백하게 소통하며 중심을
+                    잃지 않는 것.
+                  </p>
+                  <p class="text">이것이 제가 지향하는 작업자의 태도입니다.</p>
+                  <br />
+                  <p class="text">
+                    함께 일하는 동료에게는 '말이 통하는 사람, 결과가 좋은
+                    사람',<br />
+                    그리고 사용자에게는 '직관적이고 편리한 경험을 제공해주는
+                    사람'으로 기억되고 싶습니다.
+                  </p>
+                </div>
+              </li>
+              <li class="text_pocket_wrapper pocket_wrapper_04">
+                <div class="text_pocket">
+                  <span class="text">감사합니다</span>
+                  <img src="icon/ico_pocket_smile.png" alt="미소 아이콘" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 스킬 -->
+        <section
+          id="skills_section"
+          class="skills_section"
+          aria-labelledby="skills_heading"
+        >
+          <div class="title_wrapper">
+            <h2 id="skills_heading" class="section_title">SKILLS</h2>
+          </div>
+
+          <div class="section_inner">
+            <ul>
+              <li>
+                <div class="skills_item_title">
+                  <div class="skills_ico skills_ico--01"></div>
+                  <div class="graph_wrap">
+                    <p class="text">HTML</p>
+                    <div class="graph_bar graph_bar--01">
+                      <span class="bar_current"></span>
+                      <span class="bar_total"></span>
+                      <span class="bar_shadow"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills_item_detail">
+                  <p class="text">
+                    HTML5 웹 표준 및 웹 접근성을 준수하여 시멘틱 태그의 용도를
+                    정확히 알고 사용할 수 있습니다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="skills_item_title">
+                  <div class="skills_ico skills_ico--02"></div>
+                  <div class="graph_wrap">
+                    <p class="text">CSS</p>
+                    <div class="graph_bar graph_bar--02">
+                      <span class="bar_current"></span>
+                      <span class="bar_total"></span>
+                      <span class="bar_shadow"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills_item_detail">
+                  <p class="text">
+                    반응형 및 모바일 웹 페이지 스타일링을 할 수 있습니다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="skills_item_title">
+                  <div class="skills_ico skills_ico--03"></div>
+                  <div class="graph_wrap">
+                    <p class="text">SCSS</p>
+                    <div class="graph_bar graph_bar--03">
+                      <span class="bar_current"></span>
+                      <span class="bar_total"></span>
+                      <span class="bar_shadow"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills_item_detail">
+                  <p class="text">
+                    CSS 구조를 모듈화하고, 유지보수가 용이한 스타일 시트를
+                    작성할 수 있습니다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="skills_item_title">
+                  <div class="skills_ico skills_ico--04"></div>
+                  <div class="graph_wrap">
+                    <p class="text">JAVASCRIPT</p>
+                    <div class="graph_bar graph_bar--04">
+                      <span class="bar_current"></span>
+                      <span class="bar_total"></span>
+                      <span class="bar_shadow"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills_item_detail">
+                  <p class="text">
+                    DOM 요소를 제어하고 다양한 이벤트 리스너를 적용하여 동적인
+                    사용자 경험(UX)을 제공할 수 있습니다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="skills_item_title">
+                  <div class="skills_ico skills_ico--05"></div>
+                  <div class="graph_wrap">
+                    <p class="text">GIT</p>
+                    <div class="graph_bar graph_bar--05">
+                      <span class="bar_current"></span>
+                      <span class="bar_total"></span>
+                      <span class="bar_shadow"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills_item_detail">
+                  <p class="text">
+                    소스 코드의 변경 사항을 기록하는 버전 관리 프로세스를
+                    이해하고 있으며, 커밋 메시지 규약을 준수하여 작업 이력을
+                    체계적으로 관리할 수 있습니다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="skills_item_title">
+                  <div class="skills_ico skills_ico--06"></div>
+                  <div class="graph_wrap">
+                    <p class="text">GITHUB</p>
+                    <div class="graph_bar graph_bar--06">
+                      <span class="bar_current"></span>
+                      <span class="bar_total"></span>
+                      <span class="bar_shadow"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills_item_detail">
+                  <p class="text">
+                    원격 저장소를 활용하여 프로젝트 자산을 안전하게 관리하고,
+                    작업 전 최신 코드 동기화(Pull) 및 결과물 공유를 위한
+                    효율적인 협업 환경을 구축할 수 있습니다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="skills_item_title">
+                  <div class="skills_ico skills_ico--07"></div>
+                  <div class="graph_wrap">
+                    <p class="text">FIGMA</p>
+                    <div class="graph_bar graph_bar--07">
+                      <span class="bar_current"></span>
+                      <span class="bar_total"></span>
+                      <span class="bar_shadow"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills_item_detail">
+                  <p class="text">
+                    피그마를 활용한 기획안을 제작할 수 있습니다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="skills_item_title">
+                  <div class="skills_ico skills_ico--08"></div>
+                  <div class="graph_wrap">
+                    <p class="text">PHOTOSHOP</p>
+                    <div class="graph_bar graph_bar--08">
+                      <span class="bar_current"></span>
+                      <span class="bar_total"></span>
+                      <span class="bar_shadow"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills_item_detail">
+                  <p class="text">
+                    이미지 리터칭 및 소스 추출, 타이포그래피 도구 등을 활용해 웹
+                    배너 및 UI 에셋을 제작할 수 있습니다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="skills_item_title">
+                  <div class="skills_ico skills_ico--09"></div>
+                  <div class="graph_wrap">
+                    <p class="text">VISUAL STUDIO CODE</p>
+                    <div class="graph_bar graph_bar--09">
+                      <span class="bar_current"></span>
+                      <span class="bar_total"></span>
+                      <span class="bar_shadow"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills_item_detail">
+                  <p class="text">
+                    터미널과 Git 연동 기능을 통해, 코드 작성부터 버전 관리
+                    작업을 수행할 수 있습니다.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 프로젝트 -->
+        <section
+          id="works_section"
+          class="works_section"
+          aria-labelledby="works_heading"
+        >
+          <div class="title_wrapper">
+            <h2 id="works_heading" class="section_title">PROJECT</h2>
+          </div>
+
+          <div class="section_inner">
+            <div class="zoom_wiper">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide accessibility">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/portfolio/real_renewal_gosung/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="project_slide item01"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title">GOSUNG</h3>
+                          <p class="common_desc">
+                            시멘틱/반응형/접근성 준수 메인 페이지
+                            퍼블리싱(PC/MOBILE)
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag accessibility_tag">
+                              ACCESSIBILITY
+                            </li>
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag scss_tag">SCSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/portfolio/tree/main/real_renewal_gosung"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/portfolio/real_renewal_gosung/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/portfolio/renewal_seoul/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="project_slide item02"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title">SEOUL</h3>
+                          <p class="common_desc">
+                            시멘틱/반응형 퍼블리싱(PC/MOBILE)
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag scss_tag">SCSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/portfolio/tree/main/renewal_seoul"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/portfolio/renewal_seoul/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/portfolio/super_voide/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="project_slide item03"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title">SUPERVOID</h3>
+                          <p class="common_desc">
+                            시멘틱/반응형 퍼블리싱(PC/MOBILE)
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag scss_tag">SCSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/portfolio/tree/main/super_voide"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/portfolio/super_voide/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/portfolio/portfolio4/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="project_slide item04"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title">NAVER WHALE</h3>
+                          <p class="common_desc">
+                            시멘틱/반응형 퍼블리싱(PC/MOBILE)
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag css_tag">CSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/portfolio/tree/main/portfolio4"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/portfolio/portfolio4/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/portfolio/portfolio5/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="project_slide item05"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title">LG BESTSHOP</h3>
+                          <p class="common_desc">
+                            시멘틱/반응형 퍼블리싱(PC/MOBILE)
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag css_tag">CSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/portfolio/tree/main/portfolio5"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/portfolio/portfolio5/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/case_study/caseStudy5"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="project_slide item06"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title">W CONCEPT</h3>
+                          <p class="common_desc">
+                            메인 페이지 적응형 퍼블리싱(PC)
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag scss_tag">SCSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/case_study/tree/main/caseStudy5"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/case_study/caseStudy5"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/case_study/caseStudy4/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="project_slide item07"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title">YBM ECC</h3>
+                          <p class="common_desc">
+                            메인 페이지 적응형 퍼블리싱(PC)
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag css_tag">CSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/case_study/tree/main/caseStudy4"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/case_study/caseStudy4/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+
+                  <!-- 카드 복사 -->
+                  <div class="swiper-slide accessibility">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/portfolio/real_renewal_gosung/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="project_slide item01"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title">GOSUNG</h3>
+                          <p class="common_desc">
+                            시멘틱/반응형/접근성 준수 메인 페이지
+                            퍼블리싱(PC/MOBILE)
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag accessibility_tag">
+                              ACCESSIBILITY
+                            </li>
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag scss_tag">SCSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/portfolio/tree/main/real_renewal_gosung"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/portfolio/real_renewal_gosung/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/portfolio/renewal_seoul/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="project_slide item02"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title">SEOUL</h3>
+                          <p class="common_desc">
+                            시멘틱/반응형 퍼블리싱(PC/MOBILE)
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag scss_tag">SCSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/portfolio/tree/main/renewal_seoul"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/portfolio/renewal_seoul/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/portfolio/super_voide/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="project_slide item03"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title">SUPERVOID</h3>
+                          <p class="common_desc">
+                            시멘틱/반응형 퍼블리싱(PC/MOBILE)
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag scss_tag">SCSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/portfolio/tree/main/super_voide"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/portfolio/super_voide/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/portfolio/portfolio4/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="project_slide item04"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title">NAVER WHALE</h3>
+                          <p class="common_desc">
+                            시멘틱/반응형 퍼블리싱(PC/MOBILE)
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag css_tag">CSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/portfolio/tree/main/portfolio4"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/portfolio/portfolio4/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/portfolio/portfolio5/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="project_slide item05"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title">LG BESTSHOP</h3>
+                          <p class="common_desc">
+                            시멘틱/반응형 퍼블리싱(PC/MOBILE)
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag css_tag">CSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/portfolio/tree/main/portfolio5"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/portfolio/portfolio5/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/case_study/caseStudy5"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="project_slide item06"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title">W CONCEPT</h3>
+                          <p class="common_desc">
+                            메인 페이지 적응형 퍼블리싱(PC)
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag scss_tag">SCSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/case_study/tree/main/caseStudy5"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/case_study/caseStudy5"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/case_study/caseStudy4/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="project_slide item07"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title">YBM ECC</h3>
+                          <p class="common_desc">
+                            메인 페이지 적응형 퍼블리싱(PC)
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag css_tag">CSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/case_study/tree/main/caseStudy4"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/case_study/caseStudy4/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 오픈소스 -->
+        <section
+          id="opensource_section"
+          class="opensource_section"
+          aria-labelledby="opensource_heading"
+        >
+          <div class="title_wrapper">
+            <h2 id="opensource_heading" class="section_title">OPEN SOURCE</h2>
+          </div>
+
+          <div class="section_inner">
+            <div class="zoom_wiper opensource">
+              <div class="swiper mySwiper opensource">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim-video-api.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="opensource_slide item01"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title opensource_title">
+                            VIDEO LIST
+                          </h3>
+                          <p class="common_desc opensource_desc">
+                            탭 버튼 클릭 시 비디오가 재생됩니다.
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag react_tag">REACT</li>
+                            <li class="common_tag jsx_tag">JSX</li>
+                            <li class="common_tag css_tag">CSS</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions opensource_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/open_source3"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/open_source3/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim-card-item-sort.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="opensource_slide item02"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title opensource_title">
+                            SORT BUTTON
+                          </h3>
+                          <p class="common_desc opensource_desc">
+                            탭 버튼 클릭 시 제목 또는 날짜로 정렬됩니다.
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag react_tag">REACT</li>
+                            <li class="common_tag jsx_tag">JSX</li>
+                            <li class="common_tag css_tag">CSS</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions opensource_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/open-source4"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/open-source4/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/open_source/accordion_menu/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="opensource_slide item03"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title opensource_title">
+                            ACCORDION MENU
+                          </h3>
+                          <p class="common_desc opensource_desc">
+                            아코디언 메뉴입니다.
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag css_tag">CSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions opensource_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/open_source/tree/main/accordion_menu"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/open_source/accordion_menu/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article opensource_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/open_source/twodepth_menu/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="opensource_slide item04"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title opensource_title">
+                            TWO DEPTH MENU
+                          </h3>
+                          <p class="common_desc opensource_desc">
+                            헤더에 마우스 호버 시 전체메뉴가 보입니다.
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag css_tag">CSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions opensource_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/open_source/tree/main/twodepth_menu"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/open_source/twodepth_menu/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <!-- 카드 복사 -->
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim-video-api.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="opensource_slide item01"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title opensource_title">
+                            VIDEO LIST
+                          </h3>
+                          <p class="common_desc opensource_desc">
+                            탭 버튼 클릭 시 비디오가 재생됩니다.
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag react_tag">REACT</li>
+                            <li class="common_tag jsx_tag">JSX</li>
+                            <li class="common_tag css_tag">CSS</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions opensource_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/open_source3"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/open_source3/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim-card-item-sort.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="opensource_slide item02"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title opensource_title">
+                            SORT BUTTON
+                          </h3>
+                          <p class="common_desc opensource_desc">
+                            탭 버튼 클릭 시 제목 또는 날짜로 정렬됩니다.
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag react_tag">REACT</li>
+                            <li class="common_tag jsx_tag">JSX</li>
+                            <li class="common_tag css_tag">CSS</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions opensource_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/open-source4"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/open-source4/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/open_source/accordion_menu/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="opensource_slide item03"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title opensource_title">
+                            ACCORDION MENU
+                          </h3>
+                          <p class="common_desc opensource_desc">
+                            아코디언 메뉴입니다.
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag css_tag">CSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions opensource_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/open_source/tree/main/accordion_menu"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/open_source/accordion_menu/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="slide_common_article opensource_article">
+                      <a
+                        class="slide_common_link"
+                        href="https://gitnaim.github.io/open_source/twodepth_menu/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <figure class="opensource_slide item04"></figure>
+                        <div class="common_meta">
+                          <h3 class="common_title opensource_title">
+                            TWO DEPTH MENU
+                          </h3>
+                          <p class="common_desc opensource_desc">
+                            헤더에 마우스 호버 시 전체메뉴가 보입니다.
+                          </p>
+                          <ul class="common_tags">
+                            <li class="common_tag js_tag">JS</li>
+                            <li class="common_tag css_tag">CSS</li>
+                            <li class="common_tag html_tag">HTML</li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="project_actions opensource_actions">
+                        <a
+                          class="common_link"
+                          href="https://github.com/gitnaim/open_source/tree/main/twodepth_menu"
+                          target="_blank"
+                          rel="noopener"
+                          >코드</a
+                        >
+                        <a
+                          class="common_link"
+                          href="https://gitnaim.github.io/open_source/twodepth_menu/"
+                          target="_blank"
+                          rel="noopener"
+                          >자세히</a
+                        >
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 연락하기 -->
+        <section
+          id="contact_section"
+          class="contact_section"
+          aria-labelledby="contact_heading"
+        >
+          <div class="title_wrapper">
+            <h2 id="contact_heading" class="section_title">CONTACT</h2>
+          </div>
+
+          <div class="section_inner">
+            <address class="contact_block">
+              <div class="social_area">
+                <ul class="social_list">
+                  <li class="social_item">
+                    <div class="social_ico social_ico--01"></div>
+                    <div class="text_wrap">
+                      <p class="text">
+                        PUBLISHER&nbsp;&nbsp;|&nbsp;&nbsp;KIM NAIM
+                      </p>
+                    </div>
+                  </li>
+                  <li class="social_item">
+                    <div class="social_ico social_ico--02"></div>
+                    <div class="text_wrap">
+                      <p class="text">010 - 2223 - 1879</p>
+                    </div>
+                  </li>
+                  <li class="social_item">
+                    <div class="social_ico social_ico--03"></div>
+                    <div class="text_wrap">
+                      <a href="https://open.kakao.com/o/sF7BkNfg" class="text"
+                        >https://open.kakao.com/o/sF7BkNfg</a
+                      >
+                    </div>
+                  </li>
+                  <li class="social_item">
+                    <div class="social_ico social_ico--04"></div>
+                    <div class="text_wrap">
+                      <p class="text">naim007000@naver.com</p>
+                    </div>
+                  </li>
+                  <li class="social_item">
+                    <div class="social_ico social_ico--05"></div>
+                    <div class="text_wrap">
+                      <p class="text">경기도 성남시</p>
+                    </div>
+                  </li>
+                  <li class="social_item">
+                    <div class="social_ico social_ico--06"></div>
+                    <div class="text_wrap">
+                      <p class="text">
+                        프로젝트 및 채용 문의는 위 채널로 연락 부탁드립니다.
+                      </p>
+                      <p class="text">
+                        부재 시 문자 남겨주시면 확인 후 회신드리겠습니다.
+                      </p>
+                      <p class="text">감사합니다.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </address>
+          </div>
+        </section>
+      </main>
+
+      <!-- 푸터 -->
+      <footer class="footer" role="contentinfo">
+        <div class="footer_inner">
+          <small class="copyright">© 2026 NAIM. Thanks for visiting!</small>
+        </div>
+      </footer>
+    </div>
+
+    <button id="scrollToTop" class="scroll-btn" title="최상단 이동">
+      <span class="arrow_up">
+        <img id="scrollIcon" src="icon/ico_arrow_top.svg" alt="최상단 이동" />
+      </span>
+    </button>
+  </body>
+</html>
