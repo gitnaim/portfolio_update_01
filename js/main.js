@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 상하단 이동 버튼 (최상단/최하단 자동 감지 포함)
+  // 상하단 이동 버튼
   const scrollBtn = document.getElementById("scrollToTop");
   const scrollIcon = document.getElementById("scrollIcon");
   let scrollTimer;
@@ -196,13 +196,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  window.addEventListener("wheel", (event) => {
+  let lastScrollTop = 0;
+
+  window.addEventListener("scroll", () => {
     if (!scrollBtn || !scrollIcon) return;
 
     scrollBtn.style.display = "block";
-    setTimeout(() => {
-      scrollBtn.style.opacity = "1";
-    }, 10);
+    scrollBtn.style.opacity = "1";
 
     clearTimeout(scrollTimer);
 
@@ -218,19 +218,21 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (isAtTop) {
       updateScrollIcon("bottom");
     } else {
-      if (event.deltaY > 0) {
+      if (scrollTop > lastScrollTop) {
         updateScrollIcon("bottom");
       } else {
         updateScrollIcon("up");
       }
     }
 
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+
     scrollTimer = setTimeout(() => {
       scrollBtn.style.opacity = "0";
       setTimeout(() => {
         scrollBtn.style.display = "none";
-      }, 300);
-    }, 3000);
+      }, 200);
+    }, 2000);
   });
 
   scrollBtn?.addEventListener("click", () => {
